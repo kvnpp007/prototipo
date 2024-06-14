@@ -21,6 +21,6 @@
     </body>
 </html>
 
-<!-- Pérez Pérez Kevin Fernando -->
+<!--  Abaroa   Mendoza José Alejandro-->
 <!-- Olachea Carreño Miriam Nahomy -->
-<!-- González Maraver Ian Kaled -->
+<!-- Pérez Pérez Kevin Fernando -->
