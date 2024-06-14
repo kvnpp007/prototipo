@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="tiburonBallena.jpg">
     <title>Eco Turismo</title>
-</head>
-<body>
-    <header>
-    </header>
-    <main>
-        <h1>¡Hola, Pakito!</h1>
-        <h2>¡Hola, Nahomy!</h2>
-    </main>
-    <footer>
-    </footer>
-</body>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <header>
+        </header>
+        <main>
+            <h1>¡Hola, Pakito!</h1>
+            <h2>¡Hola, Nahomy!</h2>
+        </main>
+        <!-- Pie de página -->
+        <footer>
+        </footer>
+    </body>
 </html>
+
+<!-- Pérez Pérez Kevin Fernando -->
+<!-- Olachea Carreño Miriam Nahomy -->
+<!-- González Maraver Ian Kaled -->
