@@ -1,0 +1,20 @@
+# Activar el motor de reescritura
+RewriteEngine On
+
+# Redirigir todo el tráfico a index.php para manejar enrutamiento (si aplica)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Bloquear acceso a archivos sensibles
+<FilesMatch "\.(htaccess|htpasswd|php)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Prevenir listado de directorios
+Options -Indexes
+
+# Configuración de errores personalizados
+ErrorDocument 404 /errores/404.html
+ErrorDocument 500 /errores/500.html
