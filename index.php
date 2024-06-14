@@ -7,7 +7,7 @@
     <link rel="icon" href="assets/img/tiburonBallena.jpg">
     <title>Eco Turismo</title>
     </head>
-    <body>
+    <body background="assets/img/morgan-newnham.jpg">
         <!-- Encabezado -->
         <header>
         </header>
