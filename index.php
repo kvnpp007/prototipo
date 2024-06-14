@@ -9,13 +9,10 @@
 </head>
 <body>
     <header>
-        <?php include 'header.php'; ?>
     </header>
     <main>
-        <?php include 'content.php'; ?>
     </main>
     <footer>
-        <?php include 'footer.php'; ?>
     </footer>
 </body>
 </html>
