@@ -10,7 +10,7 @@
     <body background="assets/img/morgan-newnham.jpg">
         <!-- Encabezado -->
         <header>
-            <img src="assets/logo-files/logo.png" alt="Logo Eco Turismo">
+            <img src="assets/logo-files/logo.png" width="50%" alt="Logo Eco Turismo">
         </header>
         <main>
             <h1>¡Hola, Pakito!</h1>
