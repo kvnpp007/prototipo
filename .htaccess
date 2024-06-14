@@ -1,7 +1,7 @@
-# Activar el motor de reescritura
+# Configuración para habilitar el motor de reescritura y redirecciones
 RewriteEngine On
 
-# Redirigir todo el tráfico a index.php para manejar enrutamiento (si aplica)
+# Redirigir todo el tráfico a index.php para manejo de rutas (si aplica)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [L,QSA]
@@ -12,9 +12,24 @@ RewriteRule ^(.*)$ index.php [L,QSA]
   Deny from all
 </FilesMatch>
 
+# Habilitar la compresión Gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript
+  SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+</IfModule>
+
 # Prevenir listado de directorios
 Options -Indexes
 
 # Configuración de errores personalizados
 ErrorDocument 404 /errores/404.html
 ErrorDocument 500 /errores/500.html
+
+# Configurar caché para archivos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
