@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/tiburonBallena.jpg">
+    <link rel="icon" href="assets/img/tiburonBallena.jpg">
     <title>Eco Turismo</title>
     </head>
     <body>
