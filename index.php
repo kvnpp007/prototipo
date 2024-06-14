@@ -11,7 +11,8 @@
     <header>
     </header>
     <main>
-        <h1>¡Hola, Nahomy!</h1>
+        <h1>¡Hola, Pakito!</h1>
+        <h2>¡Hola, Nahomy!</h2>
     </main>
     <footer>
     </footer>
