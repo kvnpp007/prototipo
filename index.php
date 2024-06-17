@@ -15,6 +15,7 @@
         <main>
             <h1>¡Hola, Pakito!</h1>
             <h2>¡Hola, Nahomy!</h2>
+            <h2>¡Hola, Marco!</h2>
         </main>
         <!-- Pie de página -->
         <footer>
