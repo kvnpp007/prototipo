@@ -1,10 +1,13 @@
 <!-- /public_html/includes/footer.php -->
-<footer>
-        <p>&copy; <?php echo date('Y'); ?> Eco Turismo. Todos los derechos reservados.</p>
-    </footer>
-    <script src="/assets/js/script.js"></script>
-</body>
-</html>
+
+<div>
+    <p> <?php echo date('Y'); ?> Eco Turismo &trade;.</p>
+    <p>
+        Abaroa   Mendoza José Alejandro <br>
+        Olachea Carreño Miriam Nahomy <br>
+        Pérez Pérez Kevin Fernando <br>
+    </p>
+</div>
 
 <!--  Abaroa   Mendoza José Alejandro-->
 <!-- Olachea Carreño Miriam Nahomy -->
