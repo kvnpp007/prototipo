@@ -14,10 +14,16 @@
             <!-- /public_html/includes/header.php -->
             <?php include('includes/header.php'); ?> <!-- Incluir la cabecera -->
         </header>
+        <aside>
+
+        </aside>
         <main>
             <h1>Bienvenido a Mi Sitio Web, Marco</h1>
             <p>Este es el contenido principal de la página de inicio.</p>
         </main>
+        <aside>
+            
+        </aside>
         <footer>
             <!-- /public_html/includes/footer.php -->
             <?php include('includes/footer.php'); ?> <!-- Incluir el pie de página -->
