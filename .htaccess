@@ -1,0 +1,107 @@
+# Usar index.php en la carpeta /pages como página principal
+DirectoryIndex pages/index.php
+
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Redirigir automáticamente la raíz del sitio a /pages/index.php
+RewriteRule ^$ /pages/index.php [L]
+
+# Redirigir cualquier solicitud que no sea un archivo o directorio existente a /pages/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /pages/index.php [L,QSA]
+
+# Bloquear acceso a archivos sensibles
+<FilesMatch "\.(htaccess|htpasswd|php|ini|log|sh|bak|sql|env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Habilitar la compresión Gzip para mejorar la velocidad de carga
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/ld+json application/xml application/xhtml+xml application/rss+xml
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|mp4|webp|woff|woff2)$ no-gzip dont-vary
+</IfModule>
+
+# Prevenir listado de directorios
+Options -Indexes
+
+# Configuración de errores personalizados
+ErrorDocument 404 /errors/404.html
+ErrorDocument 500 /errors/500.html
+
+# Configurar caché para archivos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+# Configuración de CORS para fuentes y recursos
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|svg|webmanifest|xml)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# Seguridad adicional
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "DENY"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+</IfModule>
+
+# Redirigir tráfico HTTP a HTTPS (si aplica y tu sitio tiene certificado SSL)
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Redirigir www a no-www (opcional, elimina este bloque si prefieres usar www)
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+</IfModule>
+
+# Prevenir ejecución de scripts PHP en ciertas carpetas (mejora de seguridad)
+<FilesMatch "\.(php|php5)$">
+    <If "%{REQUEST_URI} =~ m#^/assets/#">
+        Order Allow,Deny
+        Deny from all
+    </If>
+</FilesMatch>
+
+# Limitar métodos HTTP permitidos
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK) [NC]
+    RewriteRule .* - [F]
+</IfModule>
+
+# Deshabilitar ejecución de scripts CGI
+Options -ExecCGI
+
+# Mejorar seguridad del servidor
+ServerSignature Off
+ServerTokens Prod
+
+# Configuración para manejo de cache en navegador
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=31536000, public"
+    Header unset ETag
+    FileETag None
+</IfModule>
