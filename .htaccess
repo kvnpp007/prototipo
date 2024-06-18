@@ -1,16 +1,16 @@
-# Usar index.php en la carpeta /pages como página principal
-DirectoryIndex pages/index.php
+# Usar index.php en la raíz como página principal
+DirectoryIndex index.php
 
 # Habilitar el motor de reescritura
 RewriteEngine On
 
-# Redirigir automáticamente la raíz del sitio a /pages/index.php
-RewriteRule ^$ /pages/index.php [L]
+# Redirigir automáticamente la raíz del sitio a index.php
+RewriteRule ^$ index.php [L]
 
-# Redirigir cualquier solicitud que no sea un archivo o directorio existente a /pages/index.php
+# Redirigir cualquier solicitud que no sea un archivo o directorio existente a index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /pages/index.php [L,QSA]
+RewriteRule ^(.*)$ index.php [L,QSA]
 
 # Bloquear acceso a archivos sensibles
 <FilesMatch "\.(htaccess|htpasswd|php|ini|log|sh|bak|sql|env)$">

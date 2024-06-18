@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title><?php echo $title ?? 'Eco Turismo'; ?></title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets\img\logo\favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
+        <img src="assets\img\logo\logo.png" alt="Logo">
         <nav>
             <ul>
                 <li><a href="/pages/index.php">Inicio</a></li>
