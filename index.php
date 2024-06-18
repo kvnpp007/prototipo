@@ -19,6 +19,7 @@
         </aside>
         <main>
             <h1>Bienvenido a Mi Sitio Web, Marco</h1>
+            <h2>Feliz cumpleaños Marco Antonio!!!</h2>
             <p>Este es el contenido principal de la página de inicio.</p>
         </main>
         <aside>
