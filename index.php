@@ -42,6 +42,7 @@
 									need a subtitle.
 								-->
 								<h2><a href="#">Bienvenido</a></h2>
+								<p>Página principal</p>
 							</header>
 							<div class="info">
 								<!--
