@@ -10,6 +10,22 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Turimos Ecolólogico</title>
+		<style>
+        /* Estilos opcionales para visualizar la fecha */
+        .date {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .month span {
+            display: none; /* Oculta parte de la palabra en pantallas pequeñas */
+        }
+        @media (min-width: 1200px) {
+            .month span {
+                display: inline; /* Muestra la palabra completa en pantallas grandes */
+            }
+        }
+    </style>
 	</head>
 	<body class="is-preload">
 
@@ -25,8 +41,8 @@
 									if they get too long. You can also remove the <p> entirely if you don't
 									need a subtitle.
 								-->
-								<h2><a href="#">Welcome to Striped</a></h2>
-								<p>A free, fully responsive HTML5 site template by HTML5 UP</p>
+								<h2><a href="#">Bienvenido</a></h2>
+								<p>¡!Feliz cumpleaños, Marco!</p>
 							</header>
 							<div class="info">
 								<!--
@@ -38,6 +54,10 @@
 
 								-->
 								<span class="date"><span class="month">Jul<span>y</span></span> <span class="day">14</span><span class="year">, 2014</span></span>
+
+								<!-- Script con fecha actual -->
+								<script src="assets/js/fecha.js"></script>
+
 								<!--
 									Note: You can change the number of list items in "stats" to whatever you want.
 								-->
@@ -48,7 +68,7 @@
 									<li><a href="#" class="icon brands fa-facebook-f">128</a></li>
 								</ul>
 							</div>
-							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/andres-sanz-uILhNE1VcwA-unsplash.jpg" alt="" /></a>
 							<p>
 								<strong>Hello!</strong> You're looking at <strong>Striped</strong>, a fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a>
 								for <a href="http://html5up.net">HTML5 UP</a> It features a clean, minimalistic design, styling for all basic page elements (including blockquotes, tables and lists), a
@@ -76,7 +96,7 @@
 									<li><a href="#" class="icon brands fa-facebook-f">128</a></li>
 								</ul>
 							</div>
-							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/alejandro-de-casso-v5Rsq9weKnw-unsplash.jpg" alt="" /></a>
 							<p>
 								Quisque vel sapien sit amet tellus elementum ultricies. Nunc vel orci turpis. Donec id malesuada metus.
 								Nunc nulla velit, fermentum quis interdum quis, tate etiam commodo lorem ipsum dolor sit amet dolore.
@@ -106,15 +126,15 @@
 			<div id="sidebar">
 
 				<!-- Logo -->
-					<h1 id="logo"><a href="#">STRIPED</a></h1>
+					<h1 id="logo"><a href="#">ECO TURISMO</a></h1>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="#">Latest Post</a></li>
-							<li><a href="#">Archives</a></li>
-							<li><a href="#">About Me</a></li>
-							<li><a href="#">Contact Me</a></li>
+							<li class="current"><a href="#">Ultimos Post</a></li>
+							<li><a href="#">Archivos</a></li>
+							<li><a href="#">Acerca de nosotros</a></li>
+							<li><a href="#">Contactanos</a></li>
 						</ul>
 					</nav>
 
