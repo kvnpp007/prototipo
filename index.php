@@ -42,7 +42,6 @@
 									need a subtitle.
 								-->
 								<h2><a href="#">Bienvenido</a></h2>
-								<p>¡!Feliz cumpleaños, Marco!</p>
 							</header>
 							<div class="info">
 								<!--
