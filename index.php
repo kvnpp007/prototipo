@@ -10,22 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<title>Turimos Ecolólogico</title>
-		<style>
-        /* Estilos opcionales para visualizar la fecha */
-        .date {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
-        .month span {
-            display: none; /* Oculta parte de la palabra en pantallas pequeñas */
-        }
-        @media (min-width: 1200px) {
-            .month span {
-                display: inline; /* Muestra la palabra completa en pantallas grandes */
-            }
-        }
-    </style>
+		<title>Turimo Ecológico</title>
 	</head>
 	<body class="is-preload">
 
@@ -126,7 +111,7 @@
 			<div id="sidebar">
 
 				<!-- Logo -->
-					<h1 id="logo"><a href="#">ECO TURISMO</a></h1>
+					<h1 id="logo"><a href="#">Turimo Ecológico</a></h1>
 
 				<!-- Nav -->
 					<nav id="nav">
