@@ -1,16 +1,34 @@
 <!DOCTYPE HTML>
 <!--
-	Striped by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 -->
 <html>
 	<head>
 		<title>Striped by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Titulos de la página -->
 		<title>Turimo Ecológico</title>
+
+		<!-- Meta etiquetas de Open Graph -->
+		<meta property="og:title" content="Inicio">
+		<meta property="og:description" content="Sustentabilidad para todos.">
+		<meta property="og:image" content="https://2k7.space/assets/img/logo/logo.png">
+		<meta property="og:url" content="https://2k7.space/">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Turimo Ecológico">
+		
+		<!-- Meta etiquetas para Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Turimo Ecológico">
+		<meta name="twitter:description" content="Sustentabilidad para todos.">
+		<meta name="twitter:image" content="https://2k7.space/assets/img/logo/logo.png">
+		<meta name="twitter:creator" content="@kvnpp007">
+	
+		<!-- Resto de tus meta etiquetas y enlaces -->
+
+
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
