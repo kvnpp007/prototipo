@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<!-- Titulos de la página -->
 		<title>Turimo Ecológico</title>
 
