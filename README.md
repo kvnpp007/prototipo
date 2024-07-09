@@ -39,6 +39,6 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos:
 
 ## Contacto
 
-Para cualquier consulta relacionada con este proyecto, contacta a [Pérez Pérez Kevin Fernand0] en [pp@2k7.space] o visita [www.2k7.space].
+Para cualquier consulta relacionada con este proyecto, contacta a [Pérez Pérez Kevin Fernando] en [kevinfernandopp007@gmail.com] o visita [www.2k7.space].
 
 ---
